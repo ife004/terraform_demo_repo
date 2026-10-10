@@ -10,12 +10,12 @@ terraform {
   }
 
   provider "aws" {
-  region = "var.region_value"
+  region = var.region_value
 }
 
 resource "aws_instance" "demo" {
-  ami           = "var.ami_value"
-  instance_type = "var.instance_type_value"
+  ami           = var.ami_value
+  instance_type = var.instance_type_value
 
   tags = {
     Name = "terraoform-instance"

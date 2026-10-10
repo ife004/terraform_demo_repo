@@ -1,6 +1,6 @@
 variable "region_value" {
     description = "the region the instance will be created"
-    default = "us-east-1"
+    default = "eu-north-1"
     type = string 
 }
 
@@ -13,4 +13,9 @@ variable "instance_type_value" {
     description = "the instance type"
     default = "t3.micro"
     type = string 
+}
+variable "subnet_id_value" {
+    description = "the subnet id value the instance will be created in"
+    type = string
+  
 }
